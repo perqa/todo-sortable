@@ -37,7 +37,7 @@ function TodoList() {
 
   const handleMarkAsCompleted = (key) => {
     setData((prevData) => {
-      prevData.map((item) => {
+      return prevData.map((item) => {
         if (item.key === key) {
           item.isCompleted = !item.isCompleted;
         }
